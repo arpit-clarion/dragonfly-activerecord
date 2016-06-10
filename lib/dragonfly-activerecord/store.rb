@@ -5,6 +5,10 @@ require 'active_record'
 module Dragonfly::ActiveRecord
   class Store
 
+    def initialize({})
+
+    end
+    
     # +temp_object+ should respond to +data+ and +meta+
     def write(temp_object, opts={})
       temp_object.file do |fd|
